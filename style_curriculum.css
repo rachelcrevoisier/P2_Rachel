@@ -1,0 +1,225 @@
+body
+{
+    font-family: 'Arial', Trebuchet, sans-serif;
+    color: #404040;
+	background-color:grey;	
+}
+/* Flexbox header */
+header
+{ 
+	max-width: 900px;
+	background-color:white;
+	display:flex;
+	margin:auto;
+	
+}
+.header_photo
+{ 
+	display:flex;
+	flex-direction: column;
+	background-color: #8394f9;
+	flex: 1;
+	margin-right:10px;  
+}
+.header_titre
+{ 
+	display:flex;
+	flex-direction: column;
+	flex: 3;
+	padding-top:100px;
+}
+img
+{
+    border-radius:300px;
+	width:161px;
+	padding:20px;
+	margin:auto;
+	display: block;
+}
+
+.fonction 
+{
+    text-decoration:underline #8394f9;
+}
+/* 2 flex - informations complémentaires et curriculum */
+#cv
+{ 
+	max-width: 900px;
+	background-color:white;
+	display:flex;
+	flex-direction: row;
+	margin:auto;
+}
+.informations_complementaires
+{ 
+	display:flex;
+	flex-direction: column;
+	background-color: #8394f9;
+	flex: 1;
+	margin-right:10px;  
+}
+.info:nth-child(3)
+{
+    text-align:center;
+	font-size:20px;
+	padding-bottom:20px;
+}
+.info:nth-child(2)
+{
+    flex:2;
+}
+.informations_complementaires p
+{
+	color:black;
+	text-align:justify;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:12px;
+	text-decoration:non;
+}
+.informations_complementaires a
+{
+	color:black;
+	text-decoration:none;
+}
+.curriculum
+{ 
+	display:flex;
+	flex-direction: column;
+	flex: 3;
+}
+.cv_formation, .cv_experience
+{ 
+    display: flex;
+    align-items: flex-start;
+	vertical-align:top;
+    list-style-type: none;
+	padding-right:20px;
+    
+}
+.date_lieu 
+{
+    display: flex;
+    width: 30%;
+}
+.date_lieu p 
+{
+    margin-left: 10px;
+	font-size:14px;
+}
+
+.detail 
+{
+    width: 70%;
+	font-size:14px;
+	margin-bottom:15px;
+}
+.recommandation_details
+{ 
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin:auto;
+}
+.article_recommandation
+{ 
+	margin-bottom:30px;  
+}
+
+
+/* Mise en page fontawesome loisirs */
+.fa-biking, 
+.fa-book-reader, 
+.fa-guitar {
+    border: 1px solid ;
+    border-radius: 180%;
+    padding: 4px;
+}
+/* Mise en page fontawesome curriculum */
+.fa-graduation-cap,
+.fa-briefcase,
+.fa-pen
+{
+    color: #8394f9;
+    padding: 10px;
+}
+.fa-circle
+{
+    color: #8394f9;
+    
+	padding-top:20px;
+	font-size:8px;
+}
+.fa-dot-circle
+{
+    color: #8394f9;
+    padding-top:20px;
+	font-size:10px;
+}
+h1 
+{
+    font-family: arial;
+    font-size:30px;
+	padding-left:10px;
+}
+
+h3 
+{
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+	font-size:18px;
+	background-color : #404040;
+	text-align:center;
+	color:#8394f9;
+	padding:3px;
+}
+h2
+{
+    border-bottom: 2px solid #8394f9;
+	margin-right:50px;
+	margin-left:20px;
+}
+h4, h5
+{
+    line-height: 1px;
+}
+p
+{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) 
+{
+	#cv {
+		
+		flex-direction: column;
+		flex-direction:column-reverse;
+		}
+	.curriculum, .informations_complementaires{
+		width: 100%;
+	}
+	header 
+	{
+		flex-direction: column;
+	}
+	.header_photo, .header_titre 
+	{
+		width: 100%;
+		text-align:center;
+	}
+	img
+	{
+    border-radius:180px;
+	width:145px;
+	padding:20px;
+	margin:auto;
+	display: block;
+	}
+	.date_lieu p 
+	{
+    margin-left: 10px;
+	font-size:11px;
+	}
+
+}
