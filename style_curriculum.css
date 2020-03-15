@@ -221,11 +221,9 @@ p
     margin-left: 10px;
 	font-size:11px;
 	}
-	.date_lieu 
-{
-    display: flex;
-	flex-direction:row;
-    width: 30%;
-}
+	.header_titre h1
+	{ 
+	font-size:30px;
+	}
 
 }
