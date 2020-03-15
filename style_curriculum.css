@@ -208,6 +208,10 @@ p
 		width: 100%;
 		text-align:center;
 	}
+	.header_titre h1
+	{ 
+	font-size:30px;
+	}
 	img
 	{
     border-radius:180px;
@@ -221,9 +225,21 @@ p
     margin-left: 10px;
 	font-size:11px;
 	}
-	.header_titre h1
+	.cv_formation, .cv_experience
 	{ 
-	font-size:30px;
+    display: flex;
+    flex-direction: column;
+	vertical-align:top;
+    list-style-type: none;
+	padding-right:15px;
+    }
+	.date_lieu, .detail 
+	{
+    width: 100%;
+	font-size:12px;
 	}
-
+	.detail 
+	{
+    margin-bottom:5px;
+	}
 }
